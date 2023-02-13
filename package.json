@@ -7,7 +7,7 @@
     "start": "yarn parcel src/index.html --port 9999",
     "build": "yarn parcel build src/index.html",
     "e2e": " yarn jest",
-    "coverage": "yarn test --coverage"
+    "coverage": "yarn e2e --coverage"
   },
   "author": "liron-navon",
   "devDependencies": {

@@ -27,7 +27,7 @@ jobs:
           
       # install the dependencies
       - name: install dependencies
-        run: npm ci --ignore-scripts --no-optional
+        run: npm install --ignore-scripts --no-optional
 
       # run the tests
       - name: test
@@ -41,14 +41,3 @@ jobs:
           result_path: coverage/lcov.info
           min_coverage: 90
           token: ${{ github.token }}
-
-      # create a badge and make a report of the coverage
-      - name: display coverage
-        uses: ewjoachim/coverage-comment-action@v1
-        with:
-          GITHUB_TOKEN: ${{ github.token }}
-          COVERAGE_FILE: coverage/cobertura-coverage.xml
-          BADGE_ENABLED: true
-          BADGE_FILENAME: coverage-comment-badge.json
-          MINIMUM_GREEN: 100
-          MINIMUM_ORANGE: 90

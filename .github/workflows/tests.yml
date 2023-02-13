@@ -27,7 +27,7 @@ jobs:
           
       # install the dependencies
       - name: install dependencies
-        run: yarn install --ignore-scripts --ignore-optional
+        run: yarn install --ignore-scripts
 
       # run the tests
       - name: test

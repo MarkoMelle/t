@@ -7,7 +7,7 @@
     "start": "yarn parcel src/index.html --port 9999",
     "build": "yarn parcel build src/index.html",
     "e2e": " yarn jest",
-    "coverage": "yarn e2e --coverage"
+    "coverage": "nyc yarn e2e --coverage"
   },
   "author": "liron-navon",
   "devDependencies": {
@@ -18,5 +18,8 @@
     "jest-puppeteer-istanbul": "^0.5.3",
     "parcel": "^2.0.0-rc.0",
     "puppeteer": "^10.4.0"
+  },
+  "dependencies": {
+    "nyc": "^15.1.0"
   }
 }

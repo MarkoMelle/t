@@ -8,7 +8,7 @@
   "scripts": {
     "start": "yarn parcel src/index.html -public-url --port 9999",
     "build": "yarn parcel build src/index.html --public-url ./ --no-source-maps",
-    "e2e": "yarn jest --scripts-prepend-node-path",
+    "e2e": "yarn jest",
     "lint": "eslint .",
     "coverage": "nyc yarn e2e --coverage"
   },

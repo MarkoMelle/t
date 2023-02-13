@@ -1,7 +1,4 @@
-// import puppetteer from 'puppeteer';
-// import { fork } from 'child_process';
 
-jest.setTimeout(30000); // default puppeteer timeout
 
 describe('Popover', () => {
   // let server = null;
@@ -10,19 +7,6 @@ describe('Popover', () => {
   beforeEach(async () => {
     await page.goto(baseUrl);
 });
-
-    // browser = await puppetteer.launch({
-    //   headless: false,
-    //   slowMo: 5,
-    //   devtools: true,
-    // });
-  //   page = await browser.newPage();
-  // });
-
-  // afterAll(async () => {
-  //   await browser.close();
-  //   server.kill();
-  // });
 
 
   test('should popover toggle', async () => {

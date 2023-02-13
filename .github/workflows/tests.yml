@@ -31,6 +31,7 @@ jobs:
 
       # run the tests
       - name: test
+        run: yarn config set scripts-prepend-node-path true
         run: yarn e2e
 
       # check coverage - since jest-puppeteer-istanbul doesn't support it at the moment

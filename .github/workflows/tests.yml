@@ -27,7 +27,7 @@ jobs:
           
       # install the dependencies
       - name: install dependencies
-        run: npm install --ignore-scripts --no-optional
+        run: npm install --ignore-scripts 
 
       # run the tests
       - name: test

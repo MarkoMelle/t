@@ -1,5 +1,4 @@
-name: Popovers  
-
+name: Popover
 on:
   push:
     branches: [ main ]

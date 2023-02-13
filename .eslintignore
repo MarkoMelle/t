@@ -1,0 +1,7 @@
+dist
+coverage
+docs
+.github
+e2e
+tests
+**config.js

@@ -42,10 +42,10 @@ jobs:
           min_coverage: 90
           token: ${{ github.token }}
 
-
-    build-and-deploy:
+  
+    build_and_deploy:
     needs: ci
-    # runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout 🛎️

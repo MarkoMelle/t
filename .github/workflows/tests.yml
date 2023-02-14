@@ -43,6 +43,7 @@ jobs:
           token: ${{ github.token }}
 
     build-and-deploy:
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
